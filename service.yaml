@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: developer-demo-svc
+  labels:
+    name: dev-demo
+spec:
+  selector:
+    app: developer-demo
+  ports:
+    - name: web
+      port: 8080
+      protocol: TCP
